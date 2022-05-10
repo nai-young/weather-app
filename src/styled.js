@@ -15,20 +15,21 @@ export const Wrapper = styled.div`
 	border-radius: 50px;
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
-  @media (max-width: 1070px) {
-    max-height: 100%;
-  }
+	@media (max-width: 1070px) {
+		max-height: 100%;
+	}
 `;
 
 export const Details = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+  //align-items: flex-start;
 	gap: 20px;
-  @media (max-width: 1070px) {
-    flex-direction: row;
-    align-items: center;
-  }
+	@media (max-width: 1070px) {
+		flex-direction: row;
+		align-items: center;
+	}
 `;
 
 export const Content = styled.div`
@@ -66,11 +67,14 @@ export const Main = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-  flex-wrap: wrap;
+	flex-wrap: wrap;
 
-  @media(max-width: 1070px) {
-    gap: 30px;
-  }
+	@media (max-width: 1070px) {
+		gap: 30px;
+	}
+	@media (max-width: 740px) {
+		justify-content: center;
+	}
 `;
 
 export const Temperature = styled.div`
@@ -79,25 +83,29 @@ export const Temperature = styled.div`
 `;
 
 export const WeatherIcon = styled.img`
-	max-width: 140px;
+	max-width: 120px;
 `;
 
 export const MainRight = styled.div`
-height: 100%;
-padding-top: 30px;
+	height: 100%;
+	padding-top: 30px;
 	svg {
 		width: 20px;
 	}
-  @media (max-width: 1070px) {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-    flex-shrink: 1;
-  
-  }
+	@media (max-width: 1070px) {
+		display: flex;
+		gap: 30px;
+		flex-wrap: wrap;
+		flex-shrink: 1;
+	}
   @media (max-width: 740px) {
     padding: 0;
   }
+	@media (max-width: 480px) {
+		gap: 15px;
+		display: grid;
+		grid-template-columns: repeat(3, auto);
+	}
 `;
 
 export const RightSection = styled.div`
@@ -105,7 +113,6 @@ export const RightSection = styled.div`
 	align-items: center;
 	gap: 10px;
 	letter-spacing: 1.3px;
-  
 `;
 
 export const RightItem = styled.div`
@@ -122,8 +129,7 @@ export const Upcoming = styled.div`
 	display: flex;
 	gap: 50px;
 	padding: 0 20px;
-  
-	//flex-wrap: wrap;
+  justify-content: center;
 `;
 
 export const DetailsWrapper = styled.div`
@@ -138,13 +144,12 @@ export const DetailsWrapper = styled.div`
 	background: white;
   overflow: scroll;
 	box-shadow: rgba(99, 99, 99, 0.15) 0px 3px 5px 0px;
-  @media (max-width: 1070px) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    max-height: 200px;
-  }
+	@media (max-width: 1070px) {
+		flex-direction: column;
+		justify-content: center;
+		gap: 40px;
+		max-height: 240px;
+	}
 `;
 
 export const UpcomingDay = styled.div`
@@ -176,6 +181,4 @@ export const Message = styled.span`
 	//min-height: 50px;
 `;
 
-export const Timezone = styled.div`
-	
-`;
+export const Timezone = styled.div``;
