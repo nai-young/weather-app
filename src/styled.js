@@ -142,9 +142,10 @@ export const DetailsWrapper = styled.div`
 	flex-wrap: wrap;
 	justify-content: space-between;
 	background: white;
-  overflow: scroll;
+  
 	box-shadow: rgba(99, 99, 99, 0.15) 0px 3px 5px 0px;
 	@media (max-width: 1070px) {
+    overflow: scroll;
 		flex-direction: column;
 		justify-content: center;
 		gap: 40px;
