@@ -62,7 +62,7 @@ function App() {
 		const fetchData = async () => {
 			try {
 				const key = process.env.REACT_APP_API_KEY;
-				const url = `http://api.openweathermap.org/data/2.5/forecast?lat=${data?.coord?.lat}&lon=${data?.coord?.lon}&appid=${key}&units=metric`;
+				const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${data?.coord?.lat}&lon=${data?.coord?.lon}&appid=${key}&units=metric`;
 				const res = await axios.get(url);
 				if (res.data) setUpcoming(res.data.list);
 				setLoadUpcoming(false);
