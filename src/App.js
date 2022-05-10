@@ -82,7 +82,7 @@ function App() {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		const key = process.env.REACT_APP_API_KEY;
-		const url = `http://api.openweathermap.org/data/2.5/weather?q=${form?.city}&units=metric&appid=${key}`;
+		const url = `https://api.openweathermap.org/data/2.5/weather?q=${form?.city}&units=metric&appid=${key}`;
 		try {
 			const resWeather = await axios.get(url);
 			if (resWeather.data) {

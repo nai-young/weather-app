@@ -8,7 +8,7 @@
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
   <a href="https://twitter.com/naiche\_young" target="_blank">
-    <img alt="Twitter: naiche\_young" src="https://img.shields.io/twitter/follow/naiche\_young.svg?style=social" />
+    <img alt="Twitter: naiche_young" src="https://img.shields.io/twitter/follow/naiche\_young.svg?style=social" />
   </a>
 </p>
 
